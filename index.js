@@ -5,6 +5,20 @@ greenCharacter.style.left = '100px'
 greenCharacter.style.bottom = '100px'
 document.body.append(greenCharacter)
 
+let sword = document.createElement('img')
+sword.src = 'assets/sword.png'
+sword.position = 'fixed'
+sword.left = '500px'
+sword.bottom = '405px'
+document.body.append(sword)
+
+sword.addEventListener('click', function(){
+    sword.remove()
+})
+
+
+
+
 let pineTree = document.createElement('img')
 pineTree.src = 'assets/pine-tree.png'
 pineTree.style.position = 'fixed'
